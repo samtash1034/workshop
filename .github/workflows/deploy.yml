@@ -1,5 +1,6 @@
 name: Deploy to GitHub Pages
 
+# 自動部署到 GitHub Pages
 on:
   push:
     branches:
