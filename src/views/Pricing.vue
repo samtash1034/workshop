@@ -59,8 +59,8 @@
                 <span class="amount">500</span>
                 <span class="separator"> - </span>
                 <span class="amount">800</span>
+                <span class="price-period">/ 每小時</span>
               </div>
-              <div class="price-period">/ 每小時</div>
             </div>
             <div class="plan-features">
               <h4>包含服務：</h4>
@@ -213,6 +213,8 @@ export default {
   box-shadow: var(--shadow);
   transition: all 0.3s ease;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .plan-card:hover {
@@ -249,6 +251,10 @@ export default {
   border-top: 2px solid var(--light-color);
   border-bottom: 2px solid var(--light-color);
   margin-bottom: 30px;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .price-text {
@@ -265,7 +271,6 @@ export default {
   align-items: baseline;
   justify-content: center;
   gap: 5px;
-  margin-bottom: 10px;
 }
 
 .currency {
@@ -295,7 +300,7 @@ export default {
 }
 
 .plan-features {
-  margin-bottom: 25px;
+  flex: 1;
 }
 
 .plan-features h4 {
@@ -335,7 +340,7 @@ export default {
   background: var(--light-color);
   padding: 20px;
   border-radius: 0;
-  margin-top: 20px;
+  margin-top: auto;
 }
 
 .plan-note p {

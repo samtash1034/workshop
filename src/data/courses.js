@@ -14,7 +14,7 @@ export const coursesData = [
       '單元測試實作',
       'MongoDB 實驗演練'
     ],
-    images: ['1.svg', '2.png', '99.png']
+    images: ['1.svg', '2.png', '3.png', '4.png', '99.png']
   },
   {
     id: 'python-basic',
