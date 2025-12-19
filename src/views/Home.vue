@@ -121,7 +121,7 @@ export default {
           description: '跨裝置完美顯示，提供最佳使用體驗'
         },
         {
-          icon: '🌐',
+          icon: '📡',
           title: '網域設定',
           description: '網域申請、DNS設定與SSL憑證配置'
         }
