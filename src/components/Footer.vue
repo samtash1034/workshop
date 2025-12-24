@@ -12,9 +12,11 @@
           <h4>快速連結</h4>
           <ul>
             <li><router-link to="/">首頁</router-link></li>
-            <li><router-link to="/about">關於我們</router-link></li>
-            <li><router-link to="/expert">專家介紹</router-link></li>
+            <li><router-link to="/about-us">關於火星創意</router-link></li>
             <li><router-link to="/portfolio">作品案例</router-link></li>
+            <li><router-link to="/courses">教學案例</router-link></li>
+            <li><router-link to="/process">服務流程</router-link></li>
+            <li><router-link to="/pricing">費用</router-link></li>
           </ul>
         </div>
 

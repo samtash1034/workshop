@@ -12,7 +12,7 @@ export const projectsData = [
       '訊息歷史紀錄',
       '已讀功能'
     ],
-    images: ['1.png', '2.png', '3.png', '4.png', '99.png']
+    images: ['1.png', '2.png', '3.jpg', '4.png', '99.png']
   },
   {
     id: 'student-project',
@@ -28,7 +28,7 @@ export const projectsData = [
       '評分與評論系統',
       '學習資源整合'
     ],
-    images: ['1.png', '2.png', '3.png', '4.png', '5.png']
+    images: ['1.png', '2.png', '3.jpg', '4.png', '5.png']
   },
   {
     id: 'deploy-platform',
@@ -44,7 +44,7 @@ export const projectsData = [
       '構建失敗通知與告警',
       '郵件通知集成'
     ],
-    images: ['1.jpg', '2.jpg']
+    images: ['1.jpg', '2.jpg', '99.jpg']
   },
   {
     id: 'blog-optimization',
@@ -57,7 +57,8 @@ export const projectsData = [
       '更換網站圖片',
       '響應式設計優化',
       'SEO 優化',
-      '優化圖片解析度'
+      '優化圖片解析度',
+      '按鈕動畫效果'
     ],
     images: ['1.png', '2.png', '3.png']
   }
