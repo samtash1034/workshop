@@ -70,6 +70,22 @@
         </div>
       </div>
     </section>
+
+    <!-- Customer Testimonial -->
+    <section class="section testimonial-section" v-if="project.testimonial && project.testimonial.hasTestimonial">
+      <div class="container">
+        <div class="testimonial-card">
+          <h3 class="testimonial-title">客戶評價</h3>
+          <div class="testimonial-content">
+            <img
+              :src="getTestimonialImage(project)"
+              :alt="`${project.title} - 客戶評價`"
+              class="testimonial-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <div v-else class="not-found">
@@ -127,6 +143,13 @@ export default {
     },
     setImage(index) {
       this.currentImageIndex = index
+    },
+    getTestimonialImage(project) {
+      const basePath = import.meta.env.BASE_URL
+      if (project.testimonial && project.testimonial.image) {
+        return `${basePath}portfolio/${project.folder}/${project.testimonial.image}`
+      }
+      return ''
     }
   }
 }
@@ -344,6 +367,48 @@ export default {
 
 
 
+/* Customer Testimonial */
+.testimonial-section {
+  background: #fafafa;
+  padding: 40px 20px;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+}
+
+.testimonial-title {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.testimonial-title::before {
+  content: '💬';
+  font-size: 1.2rem;
+}
+
+.testimonial-content {
+  margin: 0;
+}
+
+.testimonial-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
 /* Not Found */
 .not-found {
   margin-top: 70px;
@@ -376,6 +441,14 @@ export default {
   .thumbnail {
     width: 100px;
     height: 70px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .testimonial-title {
+    font-size: 1rem;
   }
 }
 </style>
